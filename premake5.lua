@@ -1,3 +1,5 @@
+YamlInclude = path.getabsolute("include", os.getcwd())
+
 project "yaml-cpp"
 	kind "StaticLib"
 	language "C++"
@@ -15,7 +17,7 @@ project "yaml-cpp"
 
 	includedirs
 	{
-		"include"
+		YamlInclude
 	}
 
 	filter "system:windows"
